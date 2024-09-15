@@ -1,0 +1,73 @@
+.match-container {
+  display: grid;
+  grid-template-areas:
+    "player1 player2"
+    "board board";
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.player-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.player1 {
+  grid-area: player1;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.player2 {
+  grid-area: player2;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px;
+  background-color: darkgreen;
+  border: 5px solid black;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-cell {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  border: 2px solid darkgreen;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.board-cell.black {
+  background-color: black;
+}
+
+.board-cell.white {
+  background-color: white;
+}
+
+.valid-move {
+  border: 2px solid yellow;
+}
